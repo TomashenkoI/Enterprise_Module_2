@@ -3,7 +3,7 @@ package Main;
 /**
  * Created by 7 on 19.06.2016.
  */
-public class Module2 {
+public class Runner {
     public static ValidatorImpl validator = new ValidatorImpl();
     public static StudentCheckerImplExecutor studentChecker = new StudentCheckerImplExecutor();
     public static TaskImpl task = new TaskImpl();
@@ -23,7 +23,7 @@ public class Module2 {
         for (int i = 0; i < studentChecker.getInvalidResults().size(); i++) {
             System.out.println(studentChecker.getInvalidResults().get(i));
         }
-        
+
     }
 }
 
