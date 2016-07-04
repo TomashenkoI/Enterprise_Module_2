@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * Created by 7 on 23.06.2016.
  */
-public class TaskImpl <T> implements Task{
+public class TaskImpl implements Task<Student>{
 
     public ArrayList<Student> listOfStudents = new ArrayList<>();
 
@@ -24,7 +24,8 @@ public class TaskImpl <T> implements Task{
     }
 
     @Override
-    public ArrayList<Student> getResult() {
-        return listOfStudents;
+    public Student getResult() {
+        System.out.println(listOfStudents);
+        return null;
     }
 }

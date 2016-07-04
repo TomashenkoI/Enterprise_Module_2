@@ -3,7 +3,7 @@ package Main;
 /**
  * Created by 7 on 23.06.2016.
  */
-public class ValidatorImpl implements Validator <Student> {
+public class ValidatorImpl implements Validator<Student> {
 
     @Override
     public boolean isValid(Student student) {

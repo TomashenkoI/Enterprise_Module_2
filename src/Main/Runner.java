@@ -9,12 +9,13 @@ public class Runner {
     public static TaskImpl task = new TaskImpl();
 
 
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
         studentChecker.addTask(task);
+        studentChecker.addTask(task, validator);
         studentChecker.execute(task, validator);
 
-        System.out.println("Approriate srudent for military call: " );
+        System.out.println("Approriate students for military call: " );
         for (int i = 0; i < studentChecker.getValidResults().size(); i++) {
             System.out.println(studentChecker.getValidResults().get(i));
         }

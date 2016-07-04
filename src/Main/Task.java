@@ -1,7 +1,5 @@
 package Main;
 
-import java.util.ArrayList;
-
 /**
  * Created by 7 on 19.06.2016.
  */
@@ -11,7 +9,7 @@ public interface Task <T> {
     void execute();
 
     // Возвращает результат выполнения
-    ArrayList getResult();
+    T getResult();
 
 
 }
